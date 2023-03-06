@@ -269,6 +269,151 @@ mass_percentage = "1/6"
 print(f"On the Moon, you would weigh about {mass_percentage} of your weight on Earth")
 ```
 
+#### Listas 
+
+```python
+podemos modificar los elementos de una lista
+lista = [1,2,3,4,5]
+lista[0] = 10
+print(lista)
+[10, 2, 3, 4, 5]
+```
+#### Len() Longitud de una lista
+```python   
+len(lista)
+5
+```
+
+#### Metodo `append()`
+```python
+lista = [1,2,3,4,5]
+lista.append(6)
+print(lista)
+[1, 2, 3, 4, 5, 6]
+```
+#### Metodo `pop()`
+elimina el ultimo elemento de una lista
+
+```python
+lista = [1,2,3,4,5]
+lista.pop()
+
+print(lista)
+[1, 2, 3, 4]
+```
+
+#### Indices negativos
+```python
+lista = [1,2,3,4,5]
+lista[-1]
+5
+```
+#### Metodo `index()`
+
+Con este metodo buscamos un valor dentro de una lista y nos devuelve el indice en el que se encuentra
+
+```python
+lista = [1,2,3,4,5]
+lista.index(3)
+2
+```
+
+#### Metodo `Min() y Max()`
+```python
+lista = [1,2,3,4,5]
+min(lista)
+1       
+max(lista)
+5
+```
+
+#### Metodo `sort()`
+```python
+lista = [1,2,3,4,5]
+lista.sort()
+print(lista)
+[1, 2, 3, 4, 5]
+lista.sort(reverse=True)
+print(lista)
+[5, 4, 3, 2, 1]
+```
+
+# Administracion de Datos Con Diccionarios.
+
+```python
+planet = {
+    'name': 'Earth',
+    'moon': 1,
+
+}
+acceder a datos de un diccionario
+planet.get('name')
+'Earth'
+planet.get('moon')
+1
+planet['name']
+'Earth'
+planet['moon']
+1
+
+```
+### Diccionario complejo
+```python
+planet = {
+    'name': 'Earth',
+    'moon': 1,
+
+}
+
+planet['diameter']= {
+    'km': 12742,
+    'mi': 7917,
+}
+
+resultado
+{
+    'name': 'Earth',
+    'moon': 1,
+    'diameter': {
+        'km': 12742,
+        'mi': 7917,
+    }
+
+    recuperar valores 
+    print(f'{planet["name"]} polar diameter: {planet["diameter (km)"]["polar"]}')
+    
+}
+```
+
+## Programacion Dinamica Con Diccionarios
+
+### Metodo `keys()`
+Metodo que nos devuelve una lista con las llaves de un diccionario
+
+```python
+rainfall = {
+    'october': 3.5,
+    'november': 4.2,
+    'december': 2.1
+}
+
+rainfall.keys()
+dict_keys(['october', 'november', 'december'])
+
+for key in rainfall.keys():
+    print(key)
+october 
+november
+december
+    print(rainfall[key])
+3.5
+4.2
+2.1
+```
+
+
+
+
 
 
 
