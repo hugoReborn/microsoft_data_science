@@ -200,6 +200,80 @@ GitHub como plataforma te ofrece notificaciones de practicamente todos los event
 # Python
 - Podemos ejecutar un script de python desde la terminal moviendonos al directorio e invocando el nombre del archivo donde se encuentra nuestro script 
 
+- Cuando el texto tiene una combinación de comillas simples y dobles, puede usar comillas triples para evitar problemas con el intérprete:
+    
+ 
+
+```python
+"""We only see about 60% of the Moon's surface, this is known as the "near side"."""
+```
+
+#### Metodo `title()`
+
+```python
+"temperatures and facts about the moon".title()
+'Temperatures And Facts About The Moon'
+
+
+heading = "temperatures and facts about the moon"
+heading.title()
+'Temperatures And Facts About The Moon'
+```
+
+#### Metodo `split()`
+
+split sin argumentos dividira la cadena en cada espacio que exista en ella 
+
+```python
+"temperatures and facts about the moon".split()
+['temperatures', 'and', 'facts', 'about', 'the', 'moon']
+```
+
+#### Operador `in`
+busca si un elemento se encuentra en una lista o cadena de texto
+
+```python
+"temperatures" in "temperatures and facts about the moon"   
+True
+```
+
+#### Metodo `find()`
+busca un elemento en una cadena de texto y devuelve la posicion en la que se encuentra
+Si no se encuentra la palabra , el metodo find() devuelve -1
+
+```python
+"temperatures and facts about the moon".find("facts")
+16
+
+"temperatures and facts about the moon".find("hola")
+-1
+```
+#### Formato de cadenas `porcentage %`
+```python
+mass_percentage = "1/6"
+print("On the Moon, you would weigh about %s of your weight on Earth" % mass_percentage)
+
+On the Moon, you would weigh about 1/6 of your weight on Earth
+El uso de varios valores cambia la sintaxis, ya que se necesitan paréntesis para rodear las variables que se pasan:
+```
+
+#### Metodo `format()`
+```python
+mass_percentage = "1/6"
+print("On the Moon, you would weigh about {} of your weight on Earth".format(mass_percentage))
+```
+
+#### `f-strings`
+```python
+mass_percentage = "1/6"
+print(f"On the Moon, you would weigh about {mass_percentage} of your weight on Earth")
+```
+
+
+
+
+
+
 
 
 
